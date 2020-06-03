@@ -219,8 +219,13 @@ button.btn {
 
 /*---------- SHOWCASE SECTION ------------*/
 
-.carousel p {
-  display: none;
+.card {
+  background-color: rgb(20, 20, 20) !important;
+  max-width: 400px;
+}
+
+.card-text {
+  text-align: left;
 }
 
 /*---------- CONTACT SECTION ------------*/

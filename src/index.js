@@ -4,7 +4,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Index from './Componenti/Main'
 import 'bootstrap/dist/css/bootstrap.min.css'
-/* import '../src/fontawesome/css/all.min.css' */
+import '../src/fontawesome/css/all.min.css'
 
 ReactDOM.render(
   <Index/>,

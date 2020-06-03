@@ -1,67 +1,13 @@
 import React, { useState } from 'react';
 import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption,
+    Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button,
     Container,
     Col,
     Row
 } from 'reactstrap';
 
-const items = [
-    {
-        src: 'https://i.postimg.cc/rFQTWJgV/Cattura.png',
-        altText: 'Appcademix',
-        caption: 'Team leader of Appcademix Demo project'
-    },
-    {
-        src: 'https://www.youthemployment.org.uk/dev/wp-content/uploads/2015/01/linkedin-career-advice-600x300.png',
-        altText: 'Linkedin',
-        caption: 'Linkedin Mockup'
-    },
-    {
-        src: 'https://i.postimg.cc/nhjY8nd6/FBImage.png',
-        altText: 'Spotify',
-        caption: 'Spotify Mockup'
-    }
-];
-
 const Showcase = (props) => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [animating, setAnimating] = useState(false);
-
-    const next = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-        setActiveIndex(nextIndex);
-    }
-
-    const previous = () => {
-        if (animating) return;
-        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-        setActiveIndex(nextIndex);
-    }
-
-    const goToIndex = (newIndex) => {
-        if (animating) return;
-        setActiveIndex(newIndex);
-    }
-
-    const slides = items.map((item) => {
-        return (
-            <CarouselItem
-                onExiting={() => setAnimating(true)}
-                onExited={() => setAnimating(false)}
-                key={item.src}
-            >
-                <img src={item.src} alt={item.altText} />
-                <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-            </CarouselItem>
-        );
-    });
-
     return (
         <Container className="about-box text-right">
             <Row>
@@ -73,16 +19,37 @@ const Showcase = (props) => {
             </Row>
             <Row className="mt-5">
                 <Col>
-                    <Carousel 
-                        activeIndex={activeIndex}
-                        next={next}
-                        previous={previous}
-                    >
-                        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-                        {slides}
-                        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-                        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-                    </Carousel>
+                    <Card>
+                        <CardImg top width="100px" src="https://i.postimg.cc/rFQTWJgV/Cattura.png" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Appcademix</CardTitle>
+                            <CardSubtitle>E-Learn sharing platform - Front End/Back End</CardSubtitle>
+                            <CardText>I was the team leader of this project. Stacks used: <br/>- MongoDB <br/>- NodeJS <br/>- ExpressJS <br/>- ReactJS</CardText>
+                            <a href="https://appcademix.herokuapp.com/"><Button>Click here</Button></a>
+                        </CardBody>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card>
+                        <CardImg top width="100px" src="https://www.youthemployment.org.uk/dev/wp-content/uploads/2015/01/linkedin-career-advice-600x300.png" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Linkedin Mockup</CardTitle>
+                            <CardSubtitle>Front End/Back End</CardSubtitle>
+                            <CardText>Here is a functional mockup of the social Linkedin.</CardText>
+                            <a href="https://github.com/zyrocode/LinkedIn-FE"><Button >Click here</Button></a>
+                        </CardBody>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card>
+                        <CardImg top width="100px" src="https://i.postimg.cc/nhjY8nd6/FBImage.png" alt="Card image cap" />
+                        <CardBody>
+                            <CardTitle>Spotify Mockup</CardTitle>
+                            <CardSubtitle>Front End</CardSubtitle>
+                            <CardText>Basic Spotify mockup where you can play music from the deezer API.</CardText>
+                            <a href="https://github.com/zyrocode/Spotify2.0"><Button>Click here</Button></a>
+                        </CardBody>
+                    </Card>
                 </Col>
             </Row>
         </Container>

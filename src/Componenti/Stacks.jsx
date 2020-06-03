@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Col, Row, Button } from 'reactstrap'
-import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
 
 class Skills extends Component {
     state = {}
