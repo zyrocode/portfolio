@@ -15,7 +15,7 @@ class About extends Component {
                 </Row>
                 <Row >
                     <Col >
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>I am a MERN full-stack developer based in Turin, Italy. I went to ITIS A. Avogadro then I wanted to learn more about web tech so I joined Strive School where I grasped a lot of complex concepts and strengthen my problem solving skills.</p>
                     </Col>
                 </Row>
             </Container>
