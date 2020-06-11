@@ -7,7 +7,7 @@ class Skills extends Component {
         return (
             <Container className="skills-box">
                 <h1>
-                    <span className="second-half p-3">STACKS</span>
+                    <span className="second-half p-3">STACK</span>
                 </h1>
                 <Row className="mt-4">
                     <Col className="m-5 single-skill">

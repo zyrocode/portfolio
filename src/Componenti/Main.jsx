@@ -12,24 +12,28 @@ class Main extends Component {
     state = {}
     render() {
         return (
-            <Fade>
-                <Container fluid className="section">
-                    <Navbar />
-                    <Home />
-                </Container>
-                <Container fluid className="section">
-                    <About />
-                </Container>
-                <Container fluid className="section">
-                    <Stacks />
-                </Container>
-                <Container fluid className="section">
-                    <Showcase />
-                </Container>
-                <Container fluid className="section">
-                    <Contact />
-                </Container>
-                <Footer/>
+            <Fade className="parallax">
+                <div className="parallax__layer parallax__layer--back">
+                </div>
+                <div className="parallax__layer parallax__layer--base">
+                    <Container fluid className="section">
+                        <Navbar />
+                        <Home />
+                    </Container>
+                    <Container fluid className="section">
+                        <About />
+                    </Container>
+                    <Container fluid className="section">
+                        <Stacks />
+                    </Container>
+                    <Container fluid className="section">
+                        <Showcase />
+                    </Container>
+                    <Container fluid className="section">
+                        <Contact />
+                    </Container>
+                    <Footer />
+                </div>
             </Fade>
         );
     }
