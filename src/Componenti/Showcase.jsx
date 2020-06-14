@@ -25,7 +25,7 @@ const Showcase = (props) => {
                             <CardTitle>Appcademix</CardTitle>
                             <CardSubtitle>E-Learn sharing platform - Front End/Back End</CardSubtitle>
                             <CardText>I was the team leader of this project. Stacks used: <br/>- MongoDB <br/>- NodeJS <br/>- ExpressJS <br/>- ReactJS</CardText>
-                            <a href="https://appcademix.herokuapp.com/"><Button>Click here</Button></a>
+                            <a href="https://appcademix.herokuapp.com/"><Button>Live Demo</Button></a>
                         </CardBody>
                     </Card>
                 </Col>
@@ -36,7 +36,7 @@ const Showcase = (props) => {
                             <CardTitle>Linkedin Mockup</CardTitle>
                             <CardSubtitle>Front End/Back End</CardSubtitle>
                             <CardText>Here is a functional mockup of the social Linkedin.</CardText>
-                            <a href="https://github.com/zyrocode/LinkedIn-FE"><Button >Click here</Button></a>
+                            <a href="https://linked-in-mockup.herokuapp.com/login"><Button >Live Demo</Button></a>
                         </CardBody>
                     </Card>
                 </Col>
@@ -47,7 +47,7 @@ const Showcase = (props) => {
                             <CardTitle>Spotify Mockup</CardTitle>
                             <CardSubtitle>Front End</CardSubtitle>
                             <CardText>Basic Spotify mockup where you can play music from the deezer API.</CardText>
-                            <a href="https://github.com/zyrocode/Spotify2.0"><Button>Click here</Button></a>
+                            <a href="https://github.com/zyrocode/Spotify2.0"><Button>Repo</Button></a>
                         </CardBody>
                     </Card>
                 </Col>
