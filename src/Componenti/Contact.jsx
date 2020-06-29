@@ -22,9 +22,9 @@ class Contact extends Component {
                             </Row>
                             <Row className="mt-3">
                                 <Col>
-                                    <a className="link-contact" href="tel:00393277082181">
-                                        <span><i class="far fa-phone-alt"></i>
-                                        +39 327 708 2181
+                                <a className="link-contact" href="https://www.linkedin.com/in/ivan-plescan-356871195/">
+                                        <span><i class="fab fa-linkedin-in"></i>
+                                        Ivan Plescan
                                     </span>
                                     </a><br />
                                     <a className="link-contact" href="mailto:plescan72@outlook.it">
@@ -34,11 +34,6 @@ class Contact extends Component {
                                     </a>
                                 </Col>
                                 <Col>
-                                    <a className="link-contact" href="https://www.linkedin.com/in/ivan-plescan-356871195/">
-                                        <span><i class="fab fa-linkedin-in"></i>
-                                        Ivan Plescan
-                                    </span>
-                                    </a><br />
                                     <a className="link-contact" href="https://github.com/zyrocode">
                                     <span><i class="fab fa-github"></i>
                                         zyrocode

@@ -24,7 +24,7 @@ const Showcase = (props) => {
                         <CardBody>
                             <CardTitle>Appcademix</CardTitle>
                             <CardSubtitle>E-Learn sharing platform - Front End/Back End</CardSubtitle>
-                            <CardText>I was the team leader of this project. Stacks used: <br/>- MongoDB <br/>- NodeJS <br/>- ExpressJS <br/>- ReactJS</CardText>
+                            <CardText>I was the team leader of this project. Stack used: <br/>- MongoDB <br/>- NodeJS <br/>- ExpressJS <br/>- ReactJS</CardText>
                             <a href="https://appcademix.herokuapp.com/"><Button>Live Demo</Button></a>
                         </CardBody>
                     </Card>

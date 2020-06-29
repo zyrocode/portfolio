@@ -11,7 +11,7 @@ import Contact from './Contact';
 class Main extends Component {
     state = {}
     render() {
-        return (
+        return (<>
             <Fade className="parallax">
                 <div className="parallax__layer parallax__layer--back">
                 </div>
@@ -32,9 +32,11 @@ class Main extends Component {
                     <Container fluid className="section">
                         <Contact />
                     </Container>
-                    <Footer />
+                   
                 </div>
             </Fade>
+             <Footer />
+             </>
         );
     }
 }
